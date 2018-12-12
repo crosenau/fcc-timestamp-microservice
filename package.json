@@ -1,0 +1,26 @@
+{
+  "author": "Chris Rosenau",
+  "name": "fcc-timestamp-microservice",
+  "version": "0.0.1",
+  "description": "My FreeCodeCamp Timestamp microservice",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://able-cupcake-fcc-timestamp-microservice.glitch.me"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express",
+    "freecodecamp"
+  ]
+}

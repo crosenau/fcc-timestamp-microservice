@@ -9,8 +9,12 @@ app.use((req, res, next) => {
 });
 
 app.use(express.static(`${__dirname}/public`));
-
 app.get('/', (req, res) => res.sendFile(`${__dirname}/views/index.html`));
+app.get('/api/timestamp/', (req, res) => {
+  const date = new Date();
+  
+  return res.json({ unix: date.getTime(), utc: date.toUTCString()});
+});
 
 app.get('/api/timestamp/:date_string', (req, res) => {
   const input = req.params.date_string;
